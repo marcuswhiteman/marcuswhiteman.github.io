@@ -21,6 +21,31 @@ VDShop هو متجر يوفر لمستخدميه سلع رقمية وتحديد�
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
         <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+	    <!-- Global site tag (gtag.js) - Google Ads: 610924220 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-610924220"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-610924220');
+</script>
+	    <!-- Event snippet for Ajout au panier conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-610924220/NZyCCMrh2dgBELztp6MC',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
     </head>
     <body>
         <header class="header-area">
